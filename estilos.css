@@ -123,13 +123,13 @@ button:hover{
 
 .datos{
     display: grid;
-    grid-template-columns: 10% 25% 10% 25% 10% 20%;
+    grid-template-columns: 10% 20% 10% 20% 10% 20%;
     margin-top: 20px;
 }
 
 
 .datos .img{
-    margin-left: 10px;
+    margin-left: 4px;
     height: 80%;
     margin-top: 7px;
 }

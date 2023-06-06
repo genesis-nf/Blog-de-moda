@@ -1,11 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    text-align: justify;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.hero{
+.hero {
     height: 100%;
     width: 100%;
     background-image: url(https://cdn.pixabay.com/photo/2017/06/28/12/50/map-2450477__480.jpg);
@@ -13,7 +14,7 @@
     background-position: center;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,13 +23,13 @@ nav{
     padding-right: 4%;
 }
 
-.logo{
+.logo {
     color: rgb(0, 0, 0);
     font-size: 28px;
 }
 
-span{
-    color:rgb(255, 17, 160)
+span {
+    color: rgb(255, 17, 160)
 }
 
 nav ul li {
@@ -43,13 +44,13 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(252, 99, 183);
     transition: .3s;
 }
 
-button{
-    background:rgb(255, 17, 160);
+button {
+    background: rgb(255, 17, 160);
     border: none;
     border-radius: 20px;
     padding: 12px 30px;
@@ -61,7 +62,7 @@ button{
 
 }
 
-button:hover{
+button:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -73,98 +74,194 @@ button:hover{
     height: 70vh;
 }
 
-.contenido{
+.contenido {
     display: flex;
     align-items: center;
     margin: auto;
 }
 
-.tema{
+.tema {
     align-items: center;
 }
 
-.tema-principal{
+.tema-principal {
     width: 40%;
     font-weight: bold;
-    text-align:justify;
+    text-align: justify;
 }
 
-.botones{
+.botones {
     margin-left: 90px;
     margin-top: 50px;
 }
 
-/* .datos{
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    align-items: center;
-}
-
-.dato1{
-    margin: 10px;
-    padding-left: 10px;
-    justify-content:space-around;
-}
-
-.dato2{
-    margin: 10px;
-    padding-left: 10px;
-    display:flex;
-    justify-content:space-around;
-}
-
-.dato3{
-    margin: 10px;
-    padding-left: 10px;
-    display:flex;
-    justify-content:space-around;
-} */
-
-.datos{
+.datos {
     display: grid;
-    grid-template-columns: 10% 20% 10% 20% 10% 20%;
+    grid-template-columns: 10% 22% 10% 23% 10% 25%;
     margin-top: 20px;
 }
 
 
-.datos .img{
+.datos .img {
     margin-left: 4px;
     height: 80%;
     margin-top: 7px;
 }
 
-.dato1, .dato2, .dato3{
-    margin-left:3px;
+.dato1,
+.dato2,
+.dato3 {
+    margin-left: 3px;
     margin-right: 15px;
     padding-left: 10px;
     font-size: 13px;
-    text-align:left;
-    height:100%;
+    text-align: left;
+    height: 100%;
 }
 
-.footer{
+.footer {
     background-color: pink;
-    padding: 4px;
+    justify-content: center;
+    padding: 14px;
     display: flex;
     margin: 4px;
 }
 
-.img-footer{
+.img-footer {
     display: flex;
 }
 
-.iconos{
+.iconos {
     width: 10px;
     display: flex;
     height: 20px;
 }
 
-.iconos img{
-    margin-left: 10px;    
+.iconos img {
+    margin-left: 10px;
 
 }
 
 .red {
     list-style-position: inside;
+}
+
+@media (max-width:1046px) {
+    nav {
+        display: block;
+        justify-items: center;
+    }
+
+    .portada {
+        height: 40vh;
+    }
+
+    .botones {
+        display: flex;
+        margin: 20px;
+
+    }
+
+    .datos {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 50px;
+    }
+
+    .datos img {
+        width: 30%;
+        height: 300px !important;
+    }
+
+    .dato1,
+    .dato2,
+    .dato3 {
+        margin: 40px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+
+}
+
+@media (max-width:803px) {
+
+    nav ul li {
+        padding: 10px;
+
+    }
+
+    .contenido {
+        width: 80%;
+        display: block;
+    }
+
+    .portada {
+        width: 100%;
+    }
+
+    .tema-principal {
+        padding: 40px;
+        justify-content: center;
+        width: 100%;
+        margin: center;
+    }
+
+    .botones {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:665px) {
+    nav ul li {
+        padding: 8px;
+    }
+}
+
+
+@media (max-width:630px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav {
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido {
+        width: 80%;
+        display: block;
+        margin-bottom: 20%;
+    }
+
+    .tema-principal {
+        width: 95%;
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+    }
+
+    .datos {
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: 80%;
+    }
+
+    .dato1,
+    .dato2,
+    .dato3 {
+        font-size: 16px;
+        text-align: justify;
+        padding-bottom: 20%;
+        padding-top: 15%;
+        margin: auto;
+    }
+
 }

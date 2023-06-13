@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2017/06/28/12/50/map-2450477__480.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+}
+
+span {
+    color: rgb(255, 17, 160)
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(252, 99, 183);
+    transition: .3s;
+}
+
+button {
+    background: rgb(255, 17, 160);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+
+}
+
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.portada {
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 50%;
+    height: 70vh;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.tema {
+    align-items: center;
+}
+
+.tema-principal {
+    width: 40%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.botones {
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.datos {
+    display: grid;
+    background-color: rgb(255, 213, 249);
+    grid-template-columns: 20% 25% 20% 25%;
+    margin:auto;
+    justify-content:space-around;
+    padding: 4%;
+    margin-top: 7%;
+}
+
+
+.datos .img {
+    height: 200px;
+    margin: 15px;
+}
+
+.dato1,
+.dato2,
+.dato3 {
+    margin: 15px;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer {
+     background-color: rgb(255, 194, 246);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-top: 0px;
+}
+
+.img-footer {
+    display: flex;
+}
+
+.iconos {
+    width: 10px;
+    display: flex;
+    height: 20px;
+}
+
+.iconos img {
+    margin-left: 5px;
+}
+
+.red {
+    list-style-position: inside;
+}

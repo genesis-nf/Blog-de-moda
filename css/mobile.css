@@ -1,0 +1,51 @@
+
+@media (max-width:630px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav {
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido {
+        width: 80%;
+        display: block;
+        margin-bottom: 20%;
+    }
+
+    .tema-principal {
+        width: 95%;
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+    }
+
+    .datos {
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: 80%;
+    }
+
+    .dato1,
+    .dato2,
+    .dato3 {
+        font-size: 16px;
+        text-align: justify;
+        padding-bottom: 20%;
+        padding-top: 15%;
+        margin: auto;
+    }
+
+    .img-footer{
+        margin-left: -30px;
+    }
+
+}

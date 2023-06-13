@@ -1,0 +1,34 @@
+
+@media (max-width:803px) {
+
+    nav ul li {
+        padding: 10px;
+
+    }
+
+    .contenido {
+        width: 80%;
+        display: block;
+    }
+
+    .portada {
+        width: 100%;
+    }
+
+    .tema-principal {
+        padding: 40px;
+        justify-content: center;
+        width: 100%;
+        margin: center;
+    }
+
+    .botones {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:665px) {
+    nav ul li {
+        padding: 8px;
+    }
+}

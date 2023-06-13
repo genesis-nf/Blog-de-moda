@@ -1,0 +1,38 @@
+
+
+@media (max-width:1046px) {
+    nav {
+        display: block;
+        justify-items: center;
+    }
+
+    .portada {
+        height: 40vh;
+    }
+
+    .botones {
+        display: flex;
+        margin: 20px;
+
+    }
+
+    .datos {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 50px;
+    }
+
+    .datos img {
+        width: 30%;
+        height: 300px !important;
+    }
+
+    .dato1,
+    .dato2,
+    .dato3 {
+        margin: 40px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
